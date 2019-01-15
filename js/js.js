@@ -91,7 +91,7 @@ var doAnimations = function () {
 
     $animatables.each(function (i) {
         var $animatable = $(this);
-        if (($animatable.offset().top + $animatable.height() - 1000) < offset) {
+        if (($animatable.offset().top + $animatable.height() - 1500) < offset) {
             $animatable.removeClass('animatable').addClass('animated');
         }
     });
