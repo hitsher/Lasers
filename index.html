@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Laser</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="javascript, jQuery">
+    <meta name="author" content="PD">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='css/main.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="page-header" id="page-header">
+        <nav class="page-nav">
+            <div class="logo">
+                <a href="#page-header" title="Go back to top">
+                    <img src="Photos/logo.png" alt="">
+                </a>
+            </div>
+            <div class="overlay">
+                <ul class="overlay-content">
+                    <li><a href="#about" class="sliding-link" title="About Us">About Us</a></li>
+                    <li><a href="#members" class="sliding-link" title="Members">Members</a></li>
+                    <li><a href="#research" class="sliding-link" title="Research">Research</a></li>
+                    <li><a href="#gallery" class="sliding-link" title="Gallery">Gallery</a></li>
+                    <li><a href="#publication" class="sliding-link" title="Publications">Publications</a></li>
+                    <li><a href="#contact" class="sliding-link" title="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hamburger" title="Open menu" aria-label="navigation menu">
+            </button>
+        </nav>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="Photos/Header/01.png" alt="photo1" title="photo1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Photos/Header/02.png" alt="photo2" title="photo2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Photos/Header/03.png" alt="photo3" title="photo3">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Photos/Header/04.png" alt="photo4" title="photo4">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-content appear">
+            <header>
+                <h4>About Us</h4>
+            </header>
+            <div id="about" class="content">
+
+                <h5>Laboratory was foundation on 10.12.2008 r.</h5>
+                <h5>Other laser systems:</h5>
+                <ul>
+                    <li> <a>Oxford Laser micromachining station with solid-state Nd: YAG (532/1064 nm) laser</a></li>
+                    <li><a>ProMaster Optec laser micromachining station with excimer ArF (193 nm) laser</a></li>
+                    <li><a>Trotec Speedy 300 engraving system, equipped with an air-cooler RF-excited pulsed CO2 laser
+                            (λ = 10.6 μm) Synrad, Inc.</a></li>
+                    <li><a>Trodat SpeedMarker FL laser micromachining station with Ytterbium fiber laser (1062 nm IPG)
+                            equipped with galvanometer scanning system</a></li>
+                    <li><a>Litron TRLG 850-10 pulsed laser.</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-content appear">
+            <header>
+                <h4>Members</h4>
+            </header>
+            <div id="members" class="content">
+                <div class="members-tab">
+                    <p>Head of the Chair:</p>
+                    <button class="members-link" id="head1">Prof. dr
+                        Lorem Ipsum1</button>
+                    <p>Head of the Group:</p>
+                    <button class="members-link" id="head2"> Prof. dr Lorem Ipsum2</button>
+                    <p>Ph.D. students:</p>
+                    <button class="members-link" id="student1">Student1</button>
+                    <button class="members-link" id="student2">Student2</button>
+                    <button class="members-link" id="student3">Student3</button>
+                    <button class="members-link" id="student4">Student4</button>
+                </div>
+
+                <div id="Head1" class="members-content">
+
+                    <h3>Prof. dr Lorem Ipsum1</h3>
+                    <h3>Contact:</h3>
+                    <address>
+                        <p>Office: room 123, E-51</p>
+                        <p>Phone: (+48) 123 456 789</p>
+                        <p><a href="#">E-mail: lorem.ipsum@edu.pl</a></p>
+                    </address>
+                    <h3>Biography:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat enim justo, ac
+                        malesuada enim pulvinar porttitor. Integer dignissim
+                        sollicitudin dolor in tincidunt. Duis imperdiet dui quis blandit mattis. Phasellus feugiat ex
+                        tortor, pellentesque semper orci cursus vitae. Proin
+                        interdum, mi id congue hendrerit, dolor lacus dictum diam, eu efficitur justo turpis eu felis.
+                        Proin condimentum ex mi. Integer sem lorem, tempor
+                        quis nunc a, posuere tempor est. Duis tristique scelerisque consectetur. Ut volutpat vel mauris
+                        eget finibus. Aenean ac ullamcorper elit.</p>
+                    <p> Sed ante est, egestas quis nunc sed, varius sollicitudin massa. Aliquam in erat aliquet,
+                        tristique lacus in, viverra quam. Maecenas ligula
+                        nisi, dignissim sit amet volutpat eu, sagittis quis erat. Integer pretium, mi nec volutpat
+                        blandit, ex lacus condimentum lacus, id finibus libero
+                        diam vel ligula. Vestibulum dapibus luctus facilisis. Maecenas consequat leo consequat enim
+                        ultrices luctus. Suspendisse convallis nunc vitae
+                        hendrerit pretium. Praesent ullamcorper tincidunt nulla eget semper. Aenean eget felis sit amet
+                        purus ullamcorper euismod ut quis eros. Cras
+                        vitae eleifend mauris. Vestibulum condimentum leo justo, mollis sodales leo euismod in.
+                        Praesent commodo eros ac rhoncus mollis. Mauris sed
+                        vestibulum lorem. Integer tristique massa mauris, non aliquam nunc pulvinar eget. Fusce
+                        pulvinar posuere tortor, vitae rhoncus lectus imperdiet sed. Aenean rutrum blandit mi,
+                        in tempus ipsum vehicula nec..</p>
+                </div>
+
+                <div id="Head2" class="members-content">
+                    <h3>Prof. dr Lorem Ipsum2</h3>
+                    <h3>Contact:</h3>
+                    <address>
+                        <p>Office: room 123, E-51</p>
+                        <p>Phone: (+48) 123 456 789</p>
+                        <p><a href="#">E-mail: lorem.ipsum@edu.pl</a></p>
+                    </address>
+                    <h3>Biography:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat enim justo, ac
+                        malesuada enim pulvinar porttitor. Integer dignissim
+                        sollicitudin dolor in tincidunt. Duis imperdiet dui quis blandit mattis. Phasellus feugiat ex
+                        tortor, pellentesque semper orci cursus vitae. Proin
+                        interdum, mi id congue hendrerit, dolor lacus dictum diam, eu efficitur justo turpis eu felis.
+                        Proin condimentum ex mi. Integer sem lorem, tempor
+                        quis nunc a, posuere tempor est. Duis tristique scelerisque consectetur. Ut volutpat vel mauris
+                        eget finibus. Aenean ac ullamcorper elit.</p>
+                    <p> Sed ante est, egestas quis nunc sed, varius sollicitudin massa. Aliquam in erat aliquet,
+                        tristique lacus in, viverra quam. Maecenas ligula
+                        nisi, dignissim sit amet volutpat eu, sagittis quis erat. Integer pretium, mi nec volutpat
+                        blandit, ex lacus condimentum lacus, id finibus libero
+                        diam vel ligula. Vestibulum dapibus luctus facilisis. Maecenas consequat leo consequat enim
+                        ultrices luctus. Suspendisse convallis nunc vitae
+                        hendrerit pretium. Praesent ullamcorper tincidunt nulla eget semper. Aenean eget felis sit amet
+                        purus ullamcorper euismod ut quis eros. Cras
+                        vitae eleifend mauris. Vestibulum condimentum leo justo, mollis sodales leo euismod in.</p>
+                </div>
+
+                <div id="Student1" class="members-content">
+                    <h3>Student1</h3>
+                    <h3>Contact:</h3>
+                    <address>
+                        <p>Office: room 123, E-51</p>
+                        <p>Phone: (+48) 123 456 789</p>
+                        <p><a href="#">E-mail: lorem.ipsum@edu.pl</a></p>
+                    </address>
+                    <h3>Biography:</h3>
+                    <p>Proin condimentum ex mi. Integer sem lorem, tempor
+                        quis nunc a, posuere tempor est. Duis tristique scelerisque consectetur. Ut volutpat vel mauris
+                        eget finibus. Aenean ac ullamcorper elit.</p>
+                    <p> Sed ante est, egestas quis nunc sed, varius sollicitudin massa. Aliquam in erat aliquet,
+                        tristique lacus in, viverra quam. Maecenas ligula
+                        nisi, dignissim sit amet volutpat eu, sagittis quis erat. Integer pretium, mi nec volutpat
+                        blandit, ex lacus condimentum lacus, id finibus libero
+                        diam vel ligula. Vestibulum dapibus luctus facilisis. Maecenas consequat leo consequat enim
+                        ultrices luctus. Suspendisse convallis nunc vitae
+                        hendrerit pretium. Praesent ullamcorper tincidunt nulla eget semper. Aenean eget felis sit amet
+                        purus ullamcorper euismod ut quis eros. Cras
+                        vitae eleifend mauris. Vestibulum condimentum leo justo, mollis sodales leo euismod in.
+                        Praesent commodo eros ac rhoncus mollis. Mauris sed
+                        vestibulum lorem. Integer tristique massa mauris, non aliquam nunc pulvinar eget. Fusce
+                        pulvinar posuere tortor, vitae rhoncus lectus imperdiet sed. Aenean rutrum blandit mi,
+                        in tempus ipsum vehicula nec..</p>
+                </div>
+
+                <div id="Student2" class="members-content">
+                    <h3>Student2</h3>
+                    <h3>Contact:</h3>
+                    <address>
+                        <p>Office: room 123, E-51</p>
+                        <p>Phone: (+48) 123 456 789</p>
+                        <p><a href="#">E-mail: lorem.ipsum@edu.pl</a></p>
+                    </address>
+                    <h3>Biography:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat enim justo, ac
+                        malesuada enim pulvinar porttitor. Integer dignissim
+                        sollicitudin dolor in tincidunt. Duis imperdiet dui quis blandit mattis. Phasellus feugiat ex
+                        tortor, pellentesque semper orci cursus vitae. Proin
+                        interdum, mi id congue hendrerit, dolor lacus dictum diam, eu efficitur justo turpis eu felis.
+                        Proin condimentum ex mi. Integer sem lorem, tempor
+                        quis nunc a, posuere tempor est. Duis tristique scelerisque consectetur. Ut volutpat vel mauris
+                        eget finibus. Aenean ac ullamcorper elit.</p>
+                    <p> Sed ante est, egestas quis nunc sed, varius sollicitudin massa. Aliquam in erat aliquet,
+                        tristique lacus in, viverra quam. Maecenas ligula
+                        nisi, dignissim sit amet volutpat eu, sagittis quis erat. Integer pretium, mi nec volutpat
+                        blandit, ex lacus condimentum lacus, id finibus libero
+                        diam vel ligula. Vestibulum dapibus luctus facilisis. Maecenas consequat leo consequat enim
+                        ultrices luctus. Suspendisse convallis nunc vitae
+                        hendrerit pretium. Praesent ullamcorper tincidunt nulla eget semper. Aenean eget felis sit amet
+                        purus ullamcorper euismod ut quis eros. Cras
+                        vitae eleifend mauris. Vestibulum condimentum leo justo, mollis sodales leo euismod in.</p>
+                </div>
+
+                <div id="Student3" class="members-content">
+                    <h3>Student3</h3>
+                    <h3>Contact:</h3>
+                    <address>
+                        <p>Office: room 123, E-51</p>
+                        <p>Phone: (+48) 123 456 789</p>
+                        <p><a href="#">E-mail: lorem.ipsum@edu.pl</a></p>
+                    </address>
+
+                    <h3>Biography:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat enim justo, ac
+                        malesuada enim pulvinar porttitor. Integer dignissim
+                        sollicitudin dolor in tincidunt. Duis imperdiet dui quis blandit mattis. Phasellus feugiat ex
+                        tortor, pellentesque semper orci cursus vitae. Proin
+                        interdum, mi id congue hendrerit, dolor lacus dictum diam, eu efficitur justo turpis eu felis.
+                        Proin condimentum ex mi. Integer sem lorem, tempor
+                        quis nunc a, posuere tempor est. Duis tristique scelerisque consectetur. Ut volutpat vel mauris
+                        eget finibus. Aenean ac ullamcorper elit.</p>
+                    <p> Cras vitae eleifend mauris. Vestibulum condimentum leo justo, mollis sodales leo euismod in.
+                        Praesent commodo eros ac rhoncus mollis. Mauris sed
+                        vestibulum lorem. Integer tristique massa mauris, non aliquam nunc pulvinar eget. Fusce
+                        pulvinar posuere tortor, vitae rhoncus lectus imperdiet sed. Aenean rutrum blandit mi,
+                        in tempus ipsum vehicula nec..</p>
+                </div>
+
+                <div id="Student4" class="members-content">
+                    <h3>Student4</h3>
+                    <h3>Contact:</h3>
+                    <address>
+                        <p>Office: room 123, E-51</p>
+                        <p>Phone: (+48) 123 456 789</p>
+                        <p><a href="#">E-mail: lorem.ipsum@edu.pl</a></p>
+                    </address>
+                    <h3>Biography:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat enim justo, ac
+                        malesuada enim pulvinar porttitor. Integer dignissim
+                        sollicitudin dolor in tincidunt. Duis imperdiet dui quis blandit mattis. Phasellus feugiat ex
+                        tortor, pellentesque semper orci cursus vitae. Proin
+                        interdum, mi id congue hendrerit, dolor lacus dictum diam, eu efficitur justo turpis eu felis.
+                        Proin condimentum ex mi. Integer sem lorem, tempor
+                        quis nunc a, posuere tempor est. Duis tristique scelerisque consectetur. Ut volutpat vel mauris
+                        eget finibus. Aenean ac ullamcorper elit.</p>
+                    <p> Sed ante est, egestas quis nunc sed, varius sollicitudin massa. Aliquam in erat aliquet,
+                        tristique lacus in, viverra quam. Maecenas ligula
+                        nisi, dignissim sit amet volutpat eu, sagittis quis erat. Integer pretium, mi nec volutpat
+                        blandit, ex lacus condimentum lacus, id finibus libero
+                        diam vel ligula. Vestibulum dapibus luctus facilisis. Maecenas consequat leo consequat enim
+                        ultrices luctus. Suspendisse convallis nunc vitae
+                        hendrerit pretium. Praesent ullamcorper tincidunt nulla eget semper. Aenean eget felis sit amet
+                        purus ullamcorper euismod ut quis eros. Cras
+                        vitae eleifend mauris. Vestibulum condimentum leo justo, mollis sodales leo euismod in.
+                        Praesent commodo eros ac rhoncus mollis. Mauris sed
+                        vestibulum lorem. Integer tristique massa mauris, non aliquam nunc pulvinar eget. Fusce
+                        pulvinar posuere tortor, vitae rhoncus lectus imperdiet sed. Aenean rutrum blandit mi,
+                        in tempus ipsum vehicula nec..</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-content appear">
+            <header>
+                <h4>Research</h4>
+            </header>
+            <div id="research" class="content">
+                <h5>We deal with laser micro-processing since 2007.</h5>
+                <h5>We work in the field of:</h5>
+                <ul>
+                    <li>laser color marking</li>
+                    <li>manufacturing of electrical microstructures, mechanical or opto-mechanical - mikroantennas,
+                        metamaterials structures , RFID, MEMS, MEOMS</li>
+                    <li>performance elements for microfluidics</li>
+                    <li>biomedical applications - microreactors, lab-on-Chip, structuring of the surface</li>
+                    <li>implant manufacturing (machining difficult materials with traditional methods)</li>
+                    <li>manufacture of tools for microsurgery (stents, microsieves)</li>
+                    <li>machining (micro) Ceramics: LTCC, AlN, Al2O3, zirconia, etc.</li>
+                    <li>surface cleaning using laser ablation</li>
+                    <li>cutting of composite materials, flexible, cutting sterile</li>
+                    <li>study the composition of processed materials (LIBS)</li>
+                    <li>new concepts (methodologies) micromachining</li>
+                    <li>application of laser processing of new applications</li>
+                    <li>contract research in collaboration with industry</li>
+                </ul>
+                <h3>Join us!</h3>
+            </div>
+        </section>
+
+        <section class="section-content appear">
+            <header>
+                <h4>Gallery</h4>
+            </header>
+            <div id="gallery" class="content">
+                <div id="gallerycontent">
+                    <div class="Slides">
+                        <img src="Photos/Gallery/9.jpg" alt="photo1" title="photo1">
+                    </div>
+
+                    <div class="Slides">
+                        <img src="Photos/Gallery/2.jpg" alt="photo2" title="photo2">
+                    </div>
+
+                    <div class="Slides">
+                        <img src="Photos/Gallery/3.jpg" alt="photo3" title="photo3">
+                    </div>
+
+                    <div class="Slides">
+                        <img src="Photos/Gallery/4.jpg" alt="photo4" title="photo4">
+                    </div>
+
+                    <div class="Slides">
+                        <img src="Photos/Gallery/5.jpg" alt="photo5" title="photo5">
+                    </div>
+
+                    <div class="Slides">
+                        <img src="Photos/Gallery/6.jpg" alt="photo6" title="photo6">
+                    </div>
+
+                    <a class="prev" id='prev'>&#10094;</a>
+                    <a class="next" id='next'>&#10095;</a>
+                </div>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo" id="photo1" src="Photos/Gallery/9.jpg" alt="photo1" title="photo1">
+                    </div>
+                    <div class="column">
+                        <img class="demo" id="photo2" src="Photos/Gallery/2.jpg" alt="photo2" title="photo2">
+                    </div>
+                    <div class="column">
+                        <img class="demo" id="photo3" src="Photos/Gallery/3.jpg" alt="photo3" title="photo3">
+                    </div>
+                    <div class="column">
+                        <img class="demo" id="photo4" src="Photos/Gallery/4.jpg" alt="photo4" title="photo4">
+                    </div>
+                    <div class="column">
+                        <img class="demo" id="photo5" src="Photos/Gallery/5.jpg" alt="photo5" title="photo5">
+                    </div>
+                    <div class="column">
+                        <img class="demo" id="photo6" src="Photos/Gallery/6.jpg" alt="photo6" title="photo6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-content appear">
+            <header>
+                <h4>Publications</h4>
+            </header>
+            <div id="publication" class="content">
+                <div class="tab">
+                    <button class="tablinks" id="year2016">2016</button>
+                    <button class="tablinks" id="year2015">2015</button>
+                    <button class="tablinks" id="year2014">2014</button>
+                    <button class="tablinks" id="year2013">2013</button>
+                </div>
+
+                <div id="2016" class="tabcontent">
+                    <ul>
+                        <li> M.R. Wójcik, R. Zdunek, A.J. Antończak, "Unsupervised verication of laser-induced
+                            breakdown
+                            spectroscopy dataset clustering", Spectrochimica Acta Part B: Atomic Spectroscopy, Vol.
+                            126,
+                            (2016)
+                            84-92</li>
+                        <li>K.M. Łęcka, A.J. Antończak, B. Szubzda, M.R. Wójcik, B.D. Stępak, P. Szymczyk, M. Ozimek,
+                            M.
+                            Trzciński,
+                            K.M. Abramski, "Effects of laser-induced oxidation on the corrosion resistance of AISI 304
+                            stainless
+                            steel", Journal of Laser Applications, Vol. 28, No 3 (2016) 032009-1-9,
+                            http://dx.doi.org/10.2351/1.4948726</li>
+                        <li>P. Kozioł, P. Górski, A. Byndas, A.J. Antończak, B. Stępak, K. Abramski, "Experimental
+                            verification of
+                            the method for producing three-dimensional cross-pairs metamaterials structure based on a
+                            dielectric
+                            AlN cube", Journal of Physics D: Applied Physics, 49, (2016)
+                            doi:10.1088/0022-3727/49/6/065104</li>
+                        <li>M. Tomanik, M.J. Kobielarz, A. Antończak, J. Filipiak, C. Pezowicz, "The influence of
+                            poly(l-lactide)
+                            surface modification by CO2 and excimer lasers on mechanical properties", Engineering of
+                            Biomat., Vol.
+                            138, (2016) 97</li>
+                        <li> M. Tomanik, M.J. Kobielarz, A. Antończak, J. Filipiak, C. Pezowicz, "Hydrolytic
+                            degradation of
+                            PLLA
+                            and PLGA with surface modified by CO2 laser: preliminary study", Engineering of
+                            Biomaterials,
+                            Vol. 138,
+                            (2016) 96-96</li>
+                    </ul>
+                </div>
+
+                <div id="2015" class="tabcontent">
+                    <ul>
+                        <li>B.D. Stępak, A.J. Antończak, K.M. Abramski, "Rapid fabrication of microdevices by
+                            controlling the PDMS curing conditions during replication of a laser-prototyped mould", J.
+                            Micromech. Microeng., 25, (2015) 1–8 (IF-01.731), </li>
+                        <li>M.R. Wójcik, A.J. Antończak, B.D. Stępak, P.E. Kozioł, Ł.K. Łazarek, K.M. Abramski, "Direct
+                            laser writing of Fresnel microlenses with use of scanning contour ablation method",
+                            International Journal of Advanced Manufacturing Technology (2015) DOI
+                            10.1007/s00170-014-6750-2</li>
+                        <li>A.J. Antończak, Ł. Skowroński, M. Trzcinski, V. Kinzhybalo, P.E. Kozioł, K.M. Abramski,
+                            "Laser-induced oxidation of titanium substrate: Analysis of the phys-icochemical structure
+                            of the surface and sub-surface layers", Applied Surface Science, 325, (2015) 217–226</li>
+
+                    </ul>
+                </div>
+
+                <div id="2014" class="tabcontent">
+                    <ul>
+                        <li> B. Stępak, A.J. Antończak, K. Szustakiewicz, P. Kozioł, K.M. Abramski, Degradation of
+                            poly(L-lactide) under KrF excimer laser treatment, Polymer Degradation and Stability, Vol.
+                            110, (2014) 156–164,</li>
+                        <li>A.J. Antończak, B.D. Stępak, K. Szustakiewicz, M.R. Wójcik, K.M. Abramski, “Degradation of
+                            poly(L-lactide) under CO2 laser treatment above the ablation threshold” Polymer Degradation
+                            and Stability, Vol. 109, (2014) 97–105, </li>
+                        <li>Ł. Łazarek, A.J. Antończak, M. Wójcik, J. Drzymała, K.M. Abramski, “Evaluation of the
+                            laser-induced breakdown spectroscopy technique for determination of chemical composition of
+                            copper concentrates” Spectrochimica Acta Part B: Atomic Spectroscopy, Vol. 97, (2014)
+                            74–78, </li>
+                        <li> G. Balcerowska-Czerniak, A. Wronkowski, A.J. Antończak, Ł. Skowroński, A.A. Wronkowska,
+                            “The potential of multivariate analysis to phase identification based on X-ray diffraction
+                            patterns” Chemometrics and Intelligent Laboratory System, Vol. 135 (2014) 126–132,</li>
+                        <li> Ł. Skowroński, A.J. Antończak, M. Trzcinski, Ł. Łazarek, T. Hiller, A. Bukaluk, A.A.
+                            Wronkowska, “Optical properties of laser induced oxynitride films on titanium” Applied
+                            Surface Science, Vol. 304, (2014) 107-114,</li>
+                        <li> B. Stępak, A.J. Antończak, M. Bartkowiak-Jowsa, J. Filipiak, C. Pezowicz, K.M. Abramski
+                            “Fabrication of a polymer-based biodegradable stent using a CO2 laser”, Archives of Civil
+                            and Mechanical Engineering, Vol. 14, No. 2 (2014) 317–326,</li>
+                        <li> A.J. Antończak, B. Stępak, P.E. Kozioł, K.M. Abramski “The influence of process parameters
+                            on the laser-induced colouring of titanium” Applied Physics A, Vol. 115, No. 3 (2014)
+                            1003–1013</li>
+                    </ul>
+                </div>
+
+                <div id="2013" class="tabcontent">
+                    <ul>
+                        <li>P.E. Kozioł, A.J. Antończak, P.E. Szymczyk, B. Stępak, K.M. Abramski “Conductive aluminum
+                            line formation on aluminum nitride surface by infrared nanosecond laser” Applied Surface
+                            Science, Vol. 287, (2013) 165-171,</li>
+                        <li>P.E. Kozioł, P.A. Gorski, A.J. Antonczak, P. Kabacik, K.M. Abramski “Spiral Resonator
+                            manufactured on AlN ceramics to filter the coupled wave between patch antennas”,
+                            Opto-Electronics Review, Vol. 21, No. 4, (2013) 395-401,</li>
+                        <li>A.J. Antończak, M.R. Nowak, K. Szustakiewicz, J. Pigłowski, K.M. Abramski “The influence of
+                            organobentonite clay on CO2 laser grooving of nylon 6 composites”, International Journal of
+                            Advanced Manufacturing Technology, Vol. 69, No. 5-8, (2013) 1389-1401, </li>
+                        <li> M.R. Nowak, A.J. Antończak, P.E. Kozioł, K.M. Abramski “Laser prototyping of printed
+                            circuit boards” Opto-Electronics Review, Vol. 21, No.3, (2013) 45-50,</li>
+                        <li>A.J. Antończak, G. Soboń, K.M. Abramski „Simple wavelength pre-selection and stabilization
+                            of the single-frequency operation of a microchip laser”, Opto-Electronics Review, Vol. 21,
+                            No.2, (2013) 199-204,</li>
+                        <li>A.J. Antończak, D Kocoń, M. Nowak, P. Kozioł, K.M. Abramski „Laser-induced colour
+                            marking-Sensitivity scaling for a stainless steel”, Applied Surface Science, Vol. 264,
+                            (2013) 229-236,</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-content appear">
+            <header>
+                <h4>Kontakt</h4>
+            </header>
+            <div id="contact" class="content">
+                <div id="contactdetail">
+                    <address>
+                        <h5>Laser Micro-processing Group</h5>
+                        <p>Faculty of Electronics</p>
+                        <p>Wroclaw University of Science and Technology</p>
+                        <p>Wybrzeże Wyspiańskiego 27</p>
+                        <p>50-370 Wroclaw, Poland</p>
+
+                        <h5>Head of the Group:</h5>
+                        <p>Dr hab. inż. Arkadiusz J. Antończak, prof. PWr</p>
+                        <p><a href="mailto:arkadiusz.antonczak@pwr.edu.pl">arkadiusz.antonczak@pwr.edu.pl</a></p>
+                        <p>Phone: (+48) 71 320 3024</p>
+                        <p>Mobile: (+48) 505 900 495</p>
+                        <p>Fax: (+48) 71 320 3189</p>
+
+                        <h5>Our labs:</h5>
+                        <p>ul. Janiszewskiego 9</p>
+                        <p>room: 138</p>
+                        <p>C-4 building</p>
+                        <p>50-327 Wrocław, Poland</p>
+                        <p>Phone: (+48) 71 320 4698</p>
+                </div>
+                </address>
+                <div id="map">
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="page-footer">
+            <div id="footerphotos">
+                <div> <img src="Photos/Footer/1.png" alt="footerphoto1" title="footerphoto1"></div>
+                <div> <img src="Photos/Footer/2.png" alt="footerphoto2" title="footerphoto2"></div>
+                <div> <img src="Photos/Footer/3.png" alt="footerphoto3" title="footerphoto3"></div>
+            </div>
+            <div class="icon-bar">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="google"><i class="fab fa-google"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-copyright">
+            </div>
+        </div>
+    </footer>
+    <script src="js/js.js" async defer></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzJKrH0muPvzXhj-ORStfbCebYNcwezqw&callback=initMap">
+    </script>
+
+</body>
+
+</html>
