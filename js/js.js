@@ -5,7 +5,6 @@ var rok = date.getFullYear();
 document.getElementsByClassName("footer-copyright")[0].innerHTML = " Using the application you accept the terms and condition of use. Copyright &copy" + rok + " Paweł Dzienny.";
 
 
-
 var hamburger = document.querySelector(".hamburger");
 if (hamburger.addEventListener) {
 hamburger.addEventListener("click",hamburgermenu, false);}
@@ -177,7 +176,6 @@ function openInfo(e, year) {
     e.currentTarget.className += " active";
 }
 
-
 document.getElementById("year2016").click();
 
 
@@ -212,6 +210,4 @@ function memberInfo(e, worker) {
     e.currentTarget.className += " active";
 }
 
-
 document.getElementById("head1").click();
-
