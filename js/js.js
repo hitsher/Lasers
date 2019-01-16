@@ -4,23 +4,7 @@ var date = new Date();
 var rok = date.getFullYear();
 document.getElementsByClassName("footer-copyright")[0].innerHTML = " Using the application you accept the terms and condition of use. Copyright &copy" + rok + " Paweł Dzienny.";
 
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 5000);
-}
 
 var hamburger = document.querySelector(".hamburger");
 if (hamburger.addEventListener) {
@@ -193,7 +177,7 @@ function openInfo(e, year) {
     e.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
+
 document.getElementById("year2016").click();
 
 
@@ -228,48 +212,6 @@ function memberInfo(e, worker) {
     e.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
+
 document.getElementById("head1").click();
 
-/*
-
-var member = document.querySelector(".members-tab");
-member.addEventListener("click", openCityver, false);
- 
-function openCityver(e) {
-
-    if (e.target !== e.currentTarget) {
-   
-
-    let i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("members-content");
-    
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("members-link");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    let clickedItem = e.target.id;
-    let clickedContent = clickedItem+"a";
-    document.getElementById(clickedContent).style.display = "block";
-    evt.currentTarget.className += " active";
-
-    document.getElementById("Head1").click();
-e.stopPropagation();
- 
-}}
-*/
-
-
-
-function initMap() {
-    
-    var pwr = {lat: 51.107873, lng: 17.061731};
-   
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 15, center: pwr});
-    
-    var marker = new google.maps.Marker({position: pwr, map: map});
-  }
