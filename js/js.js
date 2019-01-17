@@ -13,7 +13,7 @@ else{
 };
 
     function hamburgermenu() {
-    var isExpanded = hamburger.getAttribute("aria-expanded");
+    let isExpanded = hamburger.getAttribute("aria-expanded");
     console.log(isExpanded);
     if (isExpanded === "false") {
         document.querySelector(".page-header").classList.add("nav-opened");
@@ -28,10 +28,8 @@ else{
     };
 hamburger.setAttribute("aria-expanded", "false");
 
-
-var h = window.innerWidth;
 window.onresize = function () {
-    var h = window.innerWidth;
+    let h = window.innerWidth;
     if (h > 1100) {
         document.querySelector(".page-header").classList.remove("nav-opened");
         hamburger.setAttribute("aria-expanded", "false");
@@ -49,15 +47,15 @@ navList.addEventListener("click", function () {
 
 $(function () {
     $(document).scroll(function () {
-      var $nav = $(".page-nav");
-      var $pagenav =$(".page-header") 
+      let $nav = $(".page-nav");
+      let $pagenav =$(".page-header");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $pagenav.height());
     });
   });
 
 $(".sliding-link").click(function (e) {
     e.preventDefault();
-    var aid = $(this).attr("href");
+    let aid = $(this).attr("href");
     $('html,body').animate({
         scrollTop: $(aid).offset().top
     }, 'slow');
@@ -67,7 +65,7 @@ var doAnimations = function () {
     let wH = window.innerHeight;
     if (wH > 800) {
 
-    var offset = $(window).scrollTop() + $(window).height(),
+    let offset = $(window).scrollTop() + $(window).height(),
         $animatables = $('.section-content');
 
     if ($animatables.length == 0) {
@@ -80,15 +78,16 @@ var doAnimations = function () {
             $animatable.removeClass('animatable').addClass('animated');
         }
     });
-} else { var offset = $(window).scrollTop() + $(window).height(),
+}   else { 
+    let offset = $(window).scrollTop() + $(window).height(),
     $animatables = $('.section-content');
 
-if ($animatables.length == 0) {
+    if ($animatables.length == 0) {
     $(window).off('scroll', doAnimations);
 }
 
 $animatables.each(function (i) {
-    var $animatable = $(this);
+    let $animatable = $(this);
     if (($animatable.offset().top + $animatable.height() - 3000) < offset) {
         $animatable.removeClass('animatable').addClass('animated');
     }
