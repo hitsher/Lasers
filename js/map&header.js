@@ -1,4 +1,4 @@
-var slideIndex = 0;
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -18,10 +18,10 @@ function showSlides() {
 
 function initMap() {
     
-    var pwr = {lat: 51.107873, lng: 17.061731};
+    let pwr = {lat: 51.107873, lng: 17.061731};
    
-    var map = new google.maps.Map(
+    let map = new google.maps.Map(
         document.getElementById('map'), {zoom: 15, center: pwr});
     
-    var marker = new google.maps.Marker({position: pwr, map: map});
+    let marker = new google.maps.Marker({position: pwr, map: map});
   }

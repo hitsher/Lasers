@@ -1,7 +1,7 @@
 "use strict"
 
-var date = new Date();
-var rok = date.getFullYear();
+const date = new Date();
+const rok = date.getFullYear();
 document.getElementsByClassName("footer-copyright")[0].innerHTML = " Using the application you accept the terms and condition of use. Copyright &copy" + rok + " Paweł Dzienny.";
 
 
@@ -37,7 +37,7 @@ window.onresize = function () {
     }
 }
 
-var navList = document.querySelector(".overlay ul");
+const navList = document.querySelector(".overlay ul");
 navList.addEventListener("click", function () {
     document.querySelector(".page-header").classList.remove("nav-opened");
     hamburger.setAttribute("aria-expanded", "false");
@@ -61,8 +61,8 @@ $(".sliding-link").click(function (e) {
     }, 'slow');
 });
 
-var doAnimations = function () {
-    let wH = window.innerHeight;
+const doAnimations = function () {
+    const wH = window.innerHeight;
     if (wH > 800) {
 
     let offset = $(window).scrollTop() + $(window).height(),
@@ -73,7 +73,7 @@ var doAnimations = function () {
     }
 
     $animatables.each(function (i) {
-        var $animatable = $(this);
+        const $animatable = $(this);
         if (($animatable.offset().top + $animatable.height() - 500) < offset) {
             $animatable.removeClass('animatable').addClass('animated');
         }
@@ -97,11 +97,11 @@ $(window).on('scroll', doAnimations);
 $(window).trigger('scroll');
 
 
-var slideIndex1 = 1;
+let slideIndex1 = 1;
 showPhoto(slideIndex1);
 
-var prev = document.getElementById("prev");
-var next = document.getElementById("next");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
 
 prev.addEventListener("click", function() {plusSlides(-1);},false);
 next.addEventListener("click", function() {plusSlides(1);},false);
@@ -109,13 +109,12 @@ next.addEventListener("click", function() {plusSlides(1);},false);
 function plusSlides(n) {
     showPhoto(slideIndex1 += n);
 }
-
-var photo1 = document.getElementById('photo1');
-var photo2 = document.getElementById('photo2');
-var photo3 = document.getElementById('photo3');
-var photo4 = document.getElementById('photo4');
-var photo5 = document.getElementById('photo5');
-var photo6 = document.getElementById('photo6');
+const photo1 = document.getElementById('photo1');
+const photo2 = document.getElementById('photo2');
+const photo3 = document.getElementById('photo3');
+const photo4 = document.getElementById('photo4');
+const photo5 = document.getElementById('photo5');
+const photo6 = document.getElementById('photo6');
 
 photo1.addEventListener("click", function() {currentPhoto(1);},false);
 photo2.addEventListener("click", function() {currentPhoto(2);},false);
@@ -130,9 +129,9 @@ function currentPhoto(n) {
 
 function showPhoto(n) {
     let i;
-    let slides = document.getElementsByClassName("Slides");
-    let dots = document.getElementsByClassName("demo");
-    let captionText = document.getElementById("caption");
+    const slides = document.getElementsByClassName("Slides");
+    const dots = document.getElementsByClassName("demo");
+    const captionText = document.getElementById("caption");
     if (n > slides.length) {
         slideIndex1 = 1
     }
@@ -150,10 +149,10 @@ function showPhoto(n) {
     captionText.innerHTML = dots[slideIndex1 - 1].alt;
 }
 
-var year2016 = document.getElementById('year2016');
-var year2015 = document.getElementById('year2015');
-var year2014 = document.getElementById('year2014');
-var year2013 = document.getElementById('year2013');
+const year2016 = document.getElementById('year2016');
+const year2015 = document.getElementById('year2015');
+const year2014 = document.getElementById('year2014');
+const year2013 = document.getElementById('year2013');
 
 year2016.addEventListener("click", function() {openInfo(event, '2016');},false);
 year2015.addEventListener("click", function() {openInfo(event, '2015');},false);
@@ -178,12 +177,12 @@ function openInfo(e, year) {
 document.getElementById("year2016").click();
 
 
-var member1 = document.getElementById('head1');
-var member2 = document.getElementById('head2');
-var member3 = document.getElementById('student1');
-var member4 = document.getElementById('student2');
-var member5 = document.getElementById('student3');
-var member6 = document.getElementById('student4');
+const member1 = document.getElementById('head1');
+const member2 = document.getElementById('head2');
+const member3 = document.getElementById('student1');
+const member4 = document.getElementById('student2');
+const member5 = document.getElementById('student3');
+const member6 = document.getElementById('student4');
 
 
 member1.addEventListener("click", function() {memberInfo(event, 'Head1');},false);
