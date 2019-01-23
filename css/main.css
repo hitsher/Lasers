@@ -89,7 +89,8 @@ html {
     width: 100%;
     max-height: 700px;
     overflow: hidden;
-}
+    background-color: lightgray;
+   }
 
 .mySlides {
     width: 100%;
@@ -183,29 +184,37 @@ div img {
 
 @-webkit-keyframes fade {
     0% {
-        opacity: .3
+        opacity: 0.1;
     }
 
-    50% {
-        opacity: 1
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
     }
 
     100% {
-        opacity: .3
+        opacity: 0.1;
     }
 }
 
 @keyframes fade {
     0% {
-        opacity: .3
+        opacity: 0.1;
     }
 
-    50% {
-        opacity: 1
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
     }
 
     100% {
-        opacity: .3
+        opacity: 0.1;
     }
 }
 
@@ -588,6 +597,7 @@ footer {
         background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
         -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+        transition: background-color 0.4s linear;
     }
 
     .page-nav .overlay ul li {
@@ -607,9 +617,9 @@ footer {
     }
 
     .page-nav.scrolled .overlay .overlay-content {
-        background-color: #fff !important;
+        background-color: #fff;
         -webkit-transition: background-color 200ms linear;
-        transition: background-color 200ms linear;
+        transition: background-color 0.6s linear;
     }
 
     .nav-opened .page-nav .overlay ul {

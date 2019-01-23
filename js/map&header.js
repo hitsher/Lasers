@@ -1,4 +1,6 @@
-let slideIndex = 0;
+"use strict"
+
+let slideIndexNav = 0;
 showSlides();
 
 function showSlides() {
@@ -8,11 +10,11 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
+    slideIndexNav++;
+    if (slideIndexNav > slides.length) {
+        slideIndexNav = 1
     }
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndexNav - 1].style.display = "block";
     setTimeout(showSlides, 5000);
 }
 
