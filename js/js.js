@@ -97,34 +97,18 @@ next.addEventListener("click", function () {
     plusSlides(1);
 }, false);
 
+let buttons = document.querySelectorAll('.demo');
+
+for (let i = 0; i < buttons.length; i++) {
+    let photoNumber = i + 1;
+    buttons[i].addEventListener("click", function () {
+        currentPhoto(photoNumber);
+    }, false);
+}
+
 function plusSlides(n) {
     showPhoto(slideIndex += n);
 }
-const photo1 = document.getElementById('photo1');
-const photo2 = document.getElementById('photo2');
-const photo3 = document.getElementById('photo3');
-const photo4 = document.getElementById('photo4');
-const photo5 = document.getElementById('photo5');
-const photo6 = document.getElementById('photo6');
-
-photo1.addEventListener("click", function () {
-    currentPhoto(1);
-}, false);
-photo2.addEventListener("click", function () {
-    currentPhoto(2);
-}, false);
-photo3.addEventListener("click", function () {
-    currentPhoto(3);
-}, false);
-photo4.addEventListener("click", function () {
-    currentPhoto(4);
-}, false);
-photo5.addEventListener("click", function () {
-    currentPhoto(5);
-}, false);
-photo6.addEventListener("click", function () {
-    currentPhoto(6);
-}, false);
 
 function currentPhoto(n) {
     showPhoto(slideIndex = n);
@@ -152,25 +136,16 @@ function showPhoto(n) {
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-const year2016 = document.getElementById('year2016');
-const year2015 = document.getElementById('year2015');
-const year2014 = document.getElementById('year2014');
-const year2013 = document.getElementById('year2013');
+let tablinks = document.querySelectorAll('.tablinks');
 
-year2016.addEventListener("click", function () {
-    openInfo(event, '2016');
-}, false);
-year2015.addEventListener("click", function () {
-    openInfo(event, '2015');
-}, false);
-year2014.addEventListener("click", function () {
-    openInfo(event, '2014');
-}, false);
-year2013.addEventListener("click", function () {
-    openInfo(event, '2013');
-}, false);
+for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].addEventListener("click", function () {
+        openInfo(event);
+    }, false);
+}
 
-function openInfo(e, year) {
+function openInfo(e) {
+    let year = (e.target.value);
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -186,33 +161,16 @@ function openInfo(e, year) {
 
 document.getElementById("year2016").click();
 
-const member1 = document.getElementById('head1');
-const member2 = document.getElementById('head2');
-const member3 = document.getElementById('student1');
-const member4 = document.getElementById('student2');
-const member5 = document.getElementById('student3');
-const member6 = document.getElementById('student4');
+let membersLink = document.querySelectorAll('.members-link');
 
-member1.addEventListener("click", function () {
-    memberInfo(event, 'Head1');
-}, false);
-member2.addEventListener("click", function () {
-    memberInfo(event, 'Head2');
-}, false);
-member3.addEventListener("click", function () {
-    memberInfo(event, 'Student1');
-}, false);
-member4.addEventListener("click", function () {
-    memberInfo(event, 'Student2');
-}, false);
-member5.addEventListener("click", function () {
-    memberInfo(event, 'Student3');
-}, false);
-member6.addEventListener("click", function () {
-    memberInfo(event, 'Student4');
-}, false);
+for (let i = 0; i < membersLink.length; i++) {
+    membersLink[i].addEventListener("click", function () {
+        memberInfo(event);
+    }, false);
+}
 
-function memberInfo(e, worker) {
+function memberInfo(e) {
+    let worker = (e.target.value);
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("members-content");
     for (i = 0; i < tabcontent.length; i++) {
